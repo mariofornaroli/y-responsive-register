@@ -17,19 +17,7 @@ body {
     box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
 }
 
-/* .modal {
-    position: fixed;
-    top: 10%;
-    height: 80%;
-    width: 90%;
-    left: 5%;
-    overflow-y: auto;    
-
-    } */
-
 section {
-/*     padding: 2.5em;
-    padding-top: 4em; */
     padding: 2.5em;
     display: flex;
     flex-direction: column;
@@ -37,9 +25,9 @@ section {
 }
 
 .side {
-    position: relative;
-    background: url(./images/bk.jpg) no-repeat center;
     align-items: center;
+    background: url(./images/bk.jpg) no-repeat center;
+    position: relative;
 }
 
 .side::before {
@@ -64,17 +52,16 @@ section {
 .side .main-msg {
     text-transform: uppercase;
     font-size: 3.3rem;
-    font-weight: 600;
+    font-weight: bold;
     max-width: 550px;
     margin-bottom: 3em;
-    /* margin-bottom: 3em; */
 }
 
 .title {
     color: #343434;
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bold;
     letter-spacing: 0.4px;
     margin-bottom: 2em;
 }
@@ -99,7 +86,7 @@ button {
 input {
     width: 100%;
     border-bottom: 1px solid #e6e6e6;
-    color: #333;
+    color: #343434;
     letter-spacing: 0.5px;
     padding: 1em 2.5em;
 }
