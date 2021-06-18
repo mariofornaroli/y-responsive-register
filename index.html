@@ -7,44 +7,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Responsive Registration Page</title>
+    <title>Responsive Login Page</title>
 </head>
 
 <body>
-    <section class="side">
-        <p class="main-msg">Lorem ipsum dolor sit amet, HERE</p>
-        <p class="secondary-msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corporis quasi illum
-            adipisci earum sapiente doloremque sint aliquam qui repellat.</p>
-        <img src="./images/bk.svg" alt="">
-    </section>
+    <div class="modal">
+        <section class="side">
+            <p class="main-msg">digital products marketplace</p>
+            <p class="secondary-msg">Your perfect place to</br>buy & sell digital goods</p>
+        </section>
 
-    <section class="main">
-        <p class="title">Sign Up</p>
-        <div class="separator"></div>
-        <p class="welcome-message">Please, register to have access to all our services</p>
+        <section class="main">
+            <p class="title">member login</p>
+            <!-- <div class="separator"></div>
+        <p class="welcome-message">Please, register to have access to all our services</p> -->
 
-        <form>
-            <div class="form-control">
-                <input type="text" placeholder="Username">
-                <i class="fas fa-user"></i>
-            </div>
-            <div class="form-control">
-                <input type="password" placeholder="Password">
-                <i class="fas fa-unlock"></i>
-            </div>
-            <div class="form-control">
-                <input type="password" placeholder="Confirm Password">
-                <i class="fas fa-lock"></i>
-            </div>
+            <form>
+                <div class="form-control">
+                    <input type="text" placeholder="Username">
+                    <div class="focused-border"></div>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-control">
+                    <input type="password" placeholder="Password">
+                    <div class="focused-border"></div>
+                    <i class="fas fa-unlock"></i>
+                </div>
 
-            <button class="action">Register</button>
-        </form>
-        <div class="login">
-            <p>Already an account?</p>
-            <button>Log In</button>
-        </div>
-    </section>
-
+                <button class="action">login</button>
+            </form>
+            <p class="register">Not an account?<a href="#">Register</a></p>
+        </section>
+    </div>
 </body>
 
 </html>
