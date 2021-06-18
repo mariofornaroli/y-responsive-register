@@ -12,11 +12,12 @@ https://www.pinterest.it/pin/544794886159140921/
 
 body {
     min-height: 100vh;
-    background-color: #fbd0ba;
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
 }
 
-.modal {
-    background-color: #fff;
+/* .modal {
     position: fixed;
     top: 10%;
     height: 80%;
@@ -24,19 +25,21 @@ body {
     left: 5%;
     overflow-y: auto;    
 
-    display: grid;
-    grid-template-columns: 65% 1fr;
-    box-shadow: 0 19px 38px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
-}
+    } */
 
 section {
+/*     padding: 2.5em;
+    padding-top: 4em; */
     padding: 2.5em;
-    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .side {
     position: relative;
     background: url(./images/bk.jpg) no-repeat center;
+    align-items: center;
 }
 
 .side::before {
@@ -46,25 +49,25 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .side p {
     position: relative;
-    margin: auto;
     color: #fff;
     text-align: center;
     letter-spacing: 1px;
     line-height: 1.4em;
-    margin-bottom: 40px;
     font-size: 1.7rem;
 }
 
 .side .main-msg {
     text-transform: uppercase;
-    font-size: 2.8rem;
+    font-size: 3.3rem;
     font-weight: 600;
+    max-width: 550px;
     margin-bottom: 3em;
+    /* margin-bottom: 3em; */
 }
 
 .title {
@@ -154,7 +157,7 @@ button.action:hover {
 
 /* ----  Responsiveness   ----  */
 @media (max-width: 980px) {
-    .modal {
+    body {
         grid-template-columns: 60% 1fr;
     }
 
@@ -165,13 +168,17 @@ button.action:hover {
 }
 
 @media (max-width: 800px) {
-    .modal {
+    body {
         grid-template-columns: 55% 1fr;
+    }
+
+    .side .main-msg {
+        font-size: 2.7rem;
     }
 }
 
 @media (max-width: 700px) {
-    .modal {
+    body {
         grid-template-columns: 1fr;
     }
 
@@ -182,7 +189,6 @@ button.action:hover {
     form {
         display: flex;
         flex-direction: column;
-        padding: ;
     }
 
     p {
